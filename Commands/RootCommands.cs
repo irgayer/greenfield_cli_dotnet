@@ -20,4 +20,7 @@ public class RootCommands
         string password = File.ReadAllText(passwordFile);
         
     }
+
+    [Subcommand]
+    public BankCommand Bank { get; set; }
 }
